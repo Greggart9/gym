@@ -1,0 +1,806 @@
+html, body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+.home_page{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    z-index: 12;
+    
+}
+.navbar{
+    position: relative;
+    background-color: rgba(250, 250, 250, 0.1);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+    z-index: 13;
+
+}
+.container1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    background-color: rgba(101, 125, 142, 0.76);
+    padding: 15px 15px 15px 15px;
+}
+.container1 p{
+    display: flex;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 800;
+}
+
+.nav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    gap: 2.5rem;
+    font-weight: 700;
+}
+.nav_links a {
+    text-decoration: none;
+    color: #fff;
+    letter-spacing: 1px;
+
+    
+  }
+.nav_links a:hover{
+    color: rgb(186, 51, 2);
+    transition: 0.5s;
+}
+#sign_up{
+    display: inline-block;
+    padding: 11px 17px;
+    background-color: orangered;
+    margin-right: 0;
+}
+
+#video_bg{
+    position: absolute;
+    min-height: 100vh;
+    min-width: 100%;
+    max-height: 100vh;
+    max-width: 100%;
+    object-fit: cover;
+    z-index: -2;
+}
+.layer{
+    position: absolute;
+    background-color: rgba(31, 51, 65, 0.76);
+    height: 100%;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.text{
+    position: absolute;
+    top: 20%;
+    text-align: center;
+    width: 80%;
+}
+.text h3{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: 800;
+}
+.text h1{
+    font-size: 5rem;
+    color: white;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 5rem;
+    
+
+}
+.text button{
+    background-color: orangered;
+    padding: 13px;
+    border: none;
+    color: white;
+    font-weight: 300;
+}
+
+ /* end of first  */
+
+.downtown_container{
+    position: fixed;
+    top: 0;
+    left: 0;
+   
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    align-items: center;
+    z-index: 10;
+    text-align: center;
+    box-shadow: 0 0 10px 5px rgba(104, 104, 108, 0.3);
+    box-sizing: border-box;
+ 
+}
+.downnavbar{
+    /* position: relative; */
+    display: flex;
+   
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    color: white;
+
+}
+.downcontainer1{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+   
+}
+.downcontainer1 p{
+    display: flex;
+    margin: 0;
+    font-size: 32px;
+    font-weight: 800;
+    color: black;
+    padding: 15px 15px 15px 15px;
+}
+
+.downnav_links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    font-size: 12px;
+    gap: 2.5rem;
+    font-weight: 700;
+}
+.downnav_links a {
+    text-decoration: none;
+    color: #000000;
+    letter-spacing: 1px;
+
+    
+  }
+.downnav_links a:hover{
+    color: rgb(186, 51, 2);
+    transition: 0.5s;
+}
+#downsign_up{
+    display: inline-block;
+    padding: 11px 17px;
+    background-color: orangered;
+    margin-right: 0;
+}
+
+
+.second_page{
+    position: relative;
+    height: 140vh;
+    width: 100%;
+    z-index: 8;
+    margin-bottom: 50px;
+}
+.program_container{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+}
+.sub_container{
+    position: absolute;
+    top: 40%;
+    text-align: center;
+    /* width: 40%; */
+}
+.sub_container h3{
+    color: grey;
+    font-size: 1rem;
+    white-space: normal;
+    font-weight: 300;
+    text-align: center;
+}
+.grid{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60%;
+    width: 100%;
+    margin-top: 0px;
+}
+.program{
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    width: 85%;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 1rem;
+}
+.text_sec{
+    margin-left: 6%;
+}
+.text_sec h3{
+    margin: 0;
+    color: rgb(32, 32, 34);
+}
+.text_sec p {
+    margin-top: 2.0%;
+    line-height: 1.5rem;
+    color: grey;
+    font-size: 1rem;
+    margin-bottom: 0;
+}
+.text_sec a {
+    margin-top: 1rem;
+    font-size: 0.7rem;
+    text-decoration: none;
+    cursor: pointer;
+    color: orangered;
+}
+/* .grid h3{
+    letter-spacing: 0.5px;
+} */
+.basic{
+    grid-column: 1;
+    grid-row: 1;
+    /* background-color: chartreuse; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.new_gym{
+    grid-column: 1;
+    grid-row: 2;
+    /* background-color: rgb(144, 0, 255); */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.advanced{
+    grid-column: 2;
+    grid-row: 1;
+    /* background-color: rgb(53, 36, 36); */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.yoga{
+    grid-column: 2;
+    grid-row: 2;
+    /* background-color: rgb(0, 221, 255); */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.muscle_grid{
+    grid-column: 1;
+    grid-row: 3;
+    /* background-color: green; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+.body{
+    grid-column: 2;
+    grid-row: 3;
+    /* background-color: brown; */
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+/* second footer */
+.sec_footer{
+    position: relative;
+    height: 60vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url(img/cta-bg.jpg);
+}
+.footer{
+    text-align: center;
+    padding: 15px;
+    width: 60%;
+}
+.footer h1{
+    font-size: 2.5rem;
+    color: white;
+}
+.footer p{
+    padding-top: 10px;
+    color: white;
+    font-size: 1rem;
+}
+.footer button{
+    background-color: orangered;
+    padding: 15px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.third_page{
+    width: 100%;
+
+}
+.classes_container{
+    position: relative;
+    height: 40vh;
+    margin-top: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
+}
+.classes{
+    text-align: center;
+}
+.training_container{
+    display: flex;
+    justify-content: center;
+    height: 110vh;
+    width: 100%;
+}
+.firsttofourth{
+    position: relative;
+    height: 110vh;
+    width: 29%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.training_grid{
+    margin-top: 5%;
+    position: absolute;
+    display: grid;
+    justify-content: center;
+    height: 100%;
+    width: 90%;
+    grid-template-columns: 1fr ;
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1.5rem;
+
+}
+.first_training{
+    grid-row: 1;
+    display: flex;
+    padding-left: 8%;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 5px rgba(104, 104, 108, 0.1);
+}
+.first_training img{
+    padding-right: 6%;
+}
+.second_training{
+    grid-row: 2;
+    display: flex;
+    padding-left: 8%;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 5px rgba(104, 104, 108, 0.1);
+}
+.second_training img{
+    padding-right: 6%;
+}
+.third_training{
+    grid-row: 3;
+    display: flex;
+    padding-left: 8%;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 5px rgba(104, 104, 108, 0.1);
+}
+.third_training img{
+    padding-right: 6%;
+}
+.fourth_training{
+    grid-row: 4;
+    display: flex;
+    padding-left: 8%;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 7px;
+    box-shadow: 0 0 10px 5px rgba(104, 104, 108, 0.1);
+}
+.fourth_training img{
+    padding-right: 6%;
+}
+.schedule_button{
+    grid-row: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.schedule_button button{
+    height: 70%;
+    width: 100%;
+    text-align: center;
+    background-color: orangered;
+    color: white;
+    border-radius: 7px;
+    border: none;
+    cursor: pointer;
+}
+
+.view_schedule_container{
+    margin-top: 5px;
+    position: relative;
+    height: 90vh;
+    width: 55%;
+    display: flex;
+    justify-content: center;
+}
+.view_schedule{
+    position: relative;
+    height: 100%;
+    width: 90%;
+
+}
+.img img{
+    width: 100%;
+    height: 50%;
+    border-radius: 7px;
+}
+
+.text_section{
+    height: 35%;
+    width: 100%;
+    line-height: 1.7rem;
+}
+.text_section p{
+    color: grey;
+    font-size: 0.9rem;
+
+}
+.text_section button{
+    color: white;
+    background-color: orangered;
+    padding: 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+.fifth{
+    width: 100%;
+    height: 150vh;
+    background-image: url(img/schedule-bg.jpg);
+    background-size: cover;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 10%;
+    color: white;
+    position: relative;
+    
+}
+
+
+.text5 img{
+    height: 4%;
+
+}
+
+.picker{
+    margin: 3%;
+}
+
+.picker a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+.picker a:hover{
+    color: orangered;
+}
+
+table{
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin: auto;
+    width: 90%;
+
+}
+
+tr, td {
+    border: 1px solid white;
+    width: 70%;
+
+}
+
+td{
+    width: 25%;
+    padding: 4%;
+}
+
+/* sixth */
+
+.sixth{
+    margin: 0%;
+    margin: auto;
+    text-align: center;
+    width: 100%;
+    height: 120%;
+    position: relative;
+}
+
+.text6{
+    margin-top: 10%;
+}
+
+.trainers{
+    display: flex;
+    justify-content: space-evenly;
+    gap: 18rem;
+    align-items: center;
+}
+
+.trainer1{
+    margin-top: 5%;
+    border: 1px solid transparent;
+    height: 50%;
+    width: 25%;
+    padding: 1%;
+    border-radius: 1%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.trainer1 img{
+    width: 90%;
+}
+
+.trainer2{
+    margin-left: -25%;
+    margin-top: 5%;
+    border: 1px solid transparent;
+    height: 50%;
+    width: 25%;
+    padding: 1%;
+    border-radius: 1%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.trainer2 img{
+    width: 90%;
+}
+
+.trainer3{
+    margin-left: -25%;
+    margin-top: 5%;
+    border: 1px solid transparent;
+    height: 50%;
+    width: 25%;
+    padding: 1%;
+    border-radius: 1%;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.trainer3 img{
+    width: 90%;
+}
+
+/* seventh */
+
+.seventh{
+
+    height: 120vh;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    margin: 0%;
+    margin-top: 50px;
+    margin-bottom: -10%;
+    position: relative;
+
+}
+
+.cover{
+    background-image: url(img/contact-bg.jpg);
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80%;
+    width: 50%;
+}
+
+form{
+    
+    display: block;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border-radius: 1%;
+    width: 80%;
+    height: 70%;
+}
+
+form input{
+    margin-top: 7%;
+    margin-left: 5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 2%;
+    width: 80%;
+
+
+}
+
+form button{
+    margin-top: 5%;
+    margin-left: 5%;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 3%;
+    width: 35%;
+    background-color: orangered;
+    color: white;
+    border: 1px none white;
+
+}
+
+.firstline{
+    display: flex;
+    gap: 10%;
+    width: 90%;
+}
+
+form button:hover{
+    color: red;
+}
+
+
+
+@media only screen and (max-width: 1014px) {
+  .nav_links {
+    display: none;
+  }
+  .container1{
+    justify-content: left;
+    padding-left: 100px;
+  }
+    .downnav_links {
+        display: none;
+      }
+    .downcontainer1{
+        justify-content: left;
+        padding-left: 100px;
+    }
+    .second_page{
+        height: 220vh;
+        margin-bottom: 50px;
+    }
+    
+    .program{
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .grid{
+        margin-top: 80px;
+    }
+    .training_container{
+        display: flex;
+        flex-direction: column;
+        height: 230vh;
+    }
+    .firsttofourth{
+        width: 100%;
+    }
+    .view_schedule_container{
+    width: 100%;
+    margin-top: 30px;
+    margin-bottom: 60px;
+    }
+    .fourth_page{
+    height: 200vh;
+}
+.sixth{
+    height: 380%;
+}
+.trainers{
+    display: flex;
+    flex-direction: column;
+}
+
+
+.trainer1{
+    width: 70%;
+    
+}
+.trainer2{
+
+    width: 70%;
+    margin-left: 0;
+}
+.trainer3{
+    width: 70%;
+    margin-left: 0;
+}
+
+
+
+}
+
+
+@media only screen and (max-width: 468px){
+    .text{
+        top: 8%;
+    }
+    .container1{
+        justify-content: left;
+        padding-left: 50px;
+    }
+    .container1 p{
+        font-size: 22px;
+    }
+    .downcontainer1{
+        justify-content: left;
+        padding-left: 50px;
+    }
+    .downcontainer1 p{
+        font-size: 22px;
+    }
+    .sub_container h3{
+       max-width: 90%;
+    }
+    .second_page{
+        height: 260vh;
+        margin-bottom: 60px;
+    }
+    .grid{
+        margin-top: 140px;
+        
+    }
+    .footer{
+        width: 90%;
+    }
+    .classes p{
+        padding-left: 10px;
+        padding-right: 10px;
+        text-align: center;
+        
+    }
+
+
+}
+
