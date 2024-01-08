@@ -800,6 +800,15 @@ form button:hover{
         text-align: center;
         
     }
+    .trainers{
+        gap: 2rem;
+    }
+    .seventh{
+        height: 80vh;
+    }
+    .cover{
+        width: 70%;
+    }
 
 
 }
